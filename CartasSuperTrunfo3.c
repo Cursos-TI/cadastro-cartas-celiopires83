@@ -5,7 +5,7 @@ int main() {
     /*
     carta, nome, area e pib sao auto explicativos.
     p_tur 1 e 2 sao para postos turisticos.
-    pop 1 e 2 para população.
+    pop 1 e 2 para populaÃ§Ã£o.
 
     */
 
@@ -23,13 +23,13 @@ int main() {
     printf("Estado: ");
     scanf("%s", estado1);
 
-    /* para a impressão de nomes compostos podemos usar na variavel de char
-    ao invés de %s
+    /* para a impressÃ£o de nomes compostos podemos usar na variavel de char
+    ao invÃ©s de %s
     */
     printf("Nome da cidade: ");
     scanf(" %49[^\n]", nome1);
 
-    printf("População: ");
+    printf("PopulaÃ§Ã£o: ");
     scanf("%uld", &pop1);
 
     printf("Area: ");
@@ -54,7 +54,7 @@ int main() {
     printf("Nome da cidade: ");
     scanf(" %49[^\n]", nome2);
 
-    printf("População: ");
+    printf("PopulaÃ§Ã£o: ");
     scanf("%ud", &pop2);
 
     printf("Area: ");
@@ -86,10 +86,10 @@ int main() {
     printf("\n\n Primeira Carta! \n");
     printf("\n Carta: %d \n", carta1);
     printf("Estado: %s \n", estado1 );
-    //codigo é a junção do numero da carta + o codigo do estado.
-    printf("Código %s%d \n", estado1, carta1);
+    //codigo Ã© a junÃ§Ã£o do numero da carta + o codigo do estado.
+    printf("CÃ³digo %s%d \n", estado1, carta1);
     printf("Nome: %s \n", nome1);
-    printf("População: %d \n", pop1);
+    printf("PopulaÃ§Ã£o: %d \n", pop1);
     printf("Area: %.2lf \n", area1);
     printf("PIB: %.2lf \n", pib1);
     printf("Pontos Turisticos: %d \n\n", p_tur1);
@@ -107,10 +107,10 @@ int main() {
     printf("\n\n Segunda Carta! \n");
     printf("\n Carta: %d \n", carta2);
     printf("Estado: %s \n", estado2 );
-    //codigo é a junção do numero da carta + o codigo do estado.
-    printf("Código %s%d \n", estado2, carta2);
+    //codigo Ã© a junÃ§Ã£o do numero da carta + o codigo do estado.
+    printf("CÃ³digo %s%d \n", estado2, carta2);
     printf("Nome: %s \n", nome2);
-    printf("População: %d \n", pop2);
+    printf("PopulaÃ§Ã£o: %d \n", pop2);
     printf("Area: %.2lf \n", area2);
     printf("PIB: %.2lf \n", pib2);
     printf("Pontos Turisticos: %d \n\n", p_tur2);
@@ -135,9 +135,11 @@ int main() {
     printf("Pontos Turisticos: %s \n", (p_tur1 > p_tur2) ? "Carta 1 Venceu" : "Carta 2 Venceu");
     printf("Renda per Capita: %s \n", (percapita1 > percapita2) ? "Carta 1 Venceu" : "Carta 2 Venceu");
     printf("Densidade: %s \n", (densidade_inverso1 < densidade_inverso2) ? "Carta 1 Venceu" : "Carta 2 Venceu");
+    printf("Super Poder: %s \n", (superpoder1 > superpoder2) ? "Carta 1 Venceu" : "Carta 2 Venceu");
 
 
 
 
     return 0;
 }
+
