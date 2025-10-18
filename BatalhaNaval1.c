@@ -2,41 +2,44 @@
 
 int main() {
 
-    //tabuleiro 10 x 10
+    //vetor do tabuleiro
     char tabuleiro[10][10];
-
-    for(int i = 0; i < 10; i++) {
+   //preenchendo o tabuleiro com 0
+    for (int i = 0; i < 10; i++) {
         for(int j = 0; j < 10; j++) {
             tabuleiro[i][j] = '0';
         }
     }
 
-    tabuleiro[2][2]= '3';
-    tabuleiro[2][3]= '3';
-    tabuleiro[2][4]= '3';
+    // NAVIO 1 HORIZONTAL
+    tabuleiro[3][1] = '3';
+    tabuleiro[3][2] = '3';
+    tabuleiro[3][3] = '3';
 
-    tabuleiro[6][8]= '5';
-    tabuleiro[7][8]= '5';
-    tabuleiro[8][8]= '5';
+    //NAVIO 2 VERTICAL
+    tabuleiro[6][7] = '5';
+    tabuleiro[7][7] = '5';
+    tabuleiro[8][7] = '5';
 
-    // mostrar o tabuleiro
-    printf("### .BATALHA NAVAL. ###\n\n");
-    //colocar lentras nas colunas
-    char linha[10] = {'A','B','C','D','E','F','G','H','I','J'};
-    //espaco para as letras ficarem em cima das colunas corretamente
+    //letras para as colunas
+    char letra[10] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
+
     printf("   ");
-    for(int j = 0; j < 10; j++) {
-        printf("%c ", linha[j]);
+    for (int i = 0; i < 10; i++) {
+        printf("%c ", letra[i]);
     }
 
     printf("\n");
 
-    for(int i = 0; i < 10; i++) {
+    for (int i = 0; i < 10; i++) {
+        //print com os numeros das colunas
         printf("%d  ", i);
-        for(int j = 0; j < 10; j++) {
+        for (int j = 0; j < 10; j++) {
+            //Imprimindo o tabuleiro
             printf("%c ", tabuleiro[i][j]);
         }
         printf("\n");
+
     }
 
     return 0;
