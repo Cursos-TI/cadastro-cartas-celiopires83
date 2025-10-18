@@ -17,9 +17,9 @@ int main() {
     tabuleiro[3][3] = '3';
 
     //NAVIO 2 VERTICAL
-    tabuleiro[6][7] = '5';
-    tabuleiro[7][7] = '5';
-    tabuleiro[8][7] = '5';
+    tabuleiro[6][7] = '3';
+    tabuleiro[7][7] = '3';
+    tabuleiro[8][7] = '3';
 
     //letras para as colunas
     char letra[10] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
@@ -44,3 +44,4 @@ int main() {
 
     return 0;
 }
+
